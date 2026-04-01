@@ -1,4 +1,5 @@
-pyaudio
-pygame
+sounddevice
+numpy
 pystray
 Pillow
+tkinterdnd2
