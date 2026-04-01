@@ -237,8 +237,11 @@ class SlapWinApp:
             menu=menu,
         )
 
-        self.detector.start()
-        self.icon.run()
+        def on_setup(icon):
+            icon.visible = True
+            self.detector.start()
+
+        self.icon.run(setup=on_setup)
 
 
 if __name__ == "__main__":
